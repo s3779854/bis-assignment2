@@ -42,11 +42,73 @@
 <div style="padding-left:16px;padding-right:16px">
 
   <h1>Minimal Viable Feature 4: </h1>
+  <h2>Inventory system (Collection and use of objects)</h2>
 
   <hr> 
 
-  
-<p>hi</p>
+  <p><img src="image/mvf4.png" height="600" width="900"/></p>
+  <br>
+  <h4>User Story</h4>
+  <h2>Story1: Track the items</h2>
+    <ul>
+      <li>As a: user</li>
+      <li>I want: to track the inventory</li>
+      <li>So: the inventory shows the items with description</li>
+    </ul>
+  <p>Acceptance criteria:</p>
+  <p>Criterion 1:</p>
+  <ul>
+    <li>Given that the user is in the game.</li>
+    <li>When the user press “B” on the keyboard.</li>
+    <li>Then the game should show the inventory.</li>
+  </ul>
+  <p>Criterion 2:</p>
+  <ul>
+    <li>Given that the inventory has shown.</li>
+    <li>When the item is selected (by the keyboard arrow).</li>
+    <li>Then the description of the item shown.</li>
+  </ul>
+  <h2>Story2: Collect the items</h2>
+  <ul>
+    <li>As a: user</li>
+    <li>I want: to collect the items over the game.</li>
+    <li>So: the item is added to my inventory.</li>
+  </ul>
+  <p>Acceptance criteria:</p>
+  <p>Criterion 1:</p>
+  <ul>
+    <li>Given that user is walking over an item has not collected before.</li>
+    <li>When user press “L” on the keyboard.</li>
+    <li>Then user can see a new box with the item’s image in the inventory.</li>
+  </ul>
+  <p>Criterion 2:</p>
+  <ul>
+    <li>Given that user is walking over an item has collected at least one before.</li>
+    <li>When the user press “L” on the keyboard.</li>
+    <li>Then the user can see the number on the right bottom of that item box has increased.</li>
+  </ul>
+  <h2>Story3: Use the items</h2>
+  <ul>
+    <li>As a: user</li>
+    <li>I want: to use the item in my inventory.</li>
+    <li>So: I can use the item according to its function.</li>
+  </ul>
+  <p>Acceptance criteria:</p>
+  <ul>
+    <li>Given that the user tracks the items in the inventory.</li>
+    <li>When the user selects the item needed to use and press “o” on the keyboard.</li>
+    <li>Then the item can be use according to its function.
+      <p>Criterion 1: If the item is a weapon, then convert the current weapon to that and put the current weapon into inventory.</p>
+      <p>Criterion 2: If the item is a pill, then decrease the number of “pills” item in the inventory. When the number turns to 0, that item disappears.</p>
+      <p>Criterion 3: If the item is a key, then unlock the door needed to open and the item disappears.</p></li>
+  </ul>
+
+
+
+
+
+
+
   
   </div>
 
