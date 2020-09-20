@@ -270,9 +270,10 @@ td, th {
   text-align:left;
   display:inline-block;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 1px solid black;
   margin-right: 10px;
   margin-bottom: 1px;
+  border-width: 2;
 }
 
 table {
