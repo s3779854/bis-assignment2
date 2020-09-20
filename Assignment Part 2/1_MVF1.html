@@ -42,7 +42,168 @@
 <div style="padding-left:16px;padding-right:16px">
 
   <h1>Minimal Viable Feature 1: </h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+<title>Minimal Viable Feature 1</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
 
+</head>
+<body>
+  <header>
+    <div>  
+    <h5>COSC2625 Building IT Systems:  <br>
+      Assignment Part 2</h5>
+    </div>
+
+    <div class="team">
+      <h5>Group: AR-FR-330-somethingsomething</h5>
+    </div>
+  </header>
+
+<div class="topnav">
+  <a href="6_Design_and_Architecture.html">Design and Architecture</a>
+  <div class="dropdown">
+    <button class="dropbtn">Minimal Viable Features<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a class="active" href="1_MVF1.html">MVF 1</a>
+      <a href="2_MVF2.html">MVF 2</a>
+      <a href="3_MVF3.html">MVF 3</a>
+      <a href="4_MVF4.html">MVF 4</a>
+      <a href="5_MVF5.html">MVF 5</a>
+    </div>
+  </div>
+  
+  <a href="7_Plan.html">Plan</a>
+  <a href="8_Agenda.html">Agenda</a>
+  
+
+  
+</div>
+
+<div style="padding-left:16px;padding-right:16px">
+
+  <h1>Minimal Viable Feature 1: Enemy combat</h1>
+
+  <hr> 
+  <h3> Enemy profiles</h3>
+
+  <p>Enemy profile: Big Coronavirus particle</p>
+      <img class="MVF1" src="image/MVF1img/BigCV.png" alt="Big coronavirus particle enemy" width="100%">
+  <p>Enemy profile: Coronavirus Zombie</p>
+      <img class="MVF1" src="image/MVF1img/CoronavirusZombie.png" alt="Coronavirus zombie monster" width="100%">
+  <p>Enemy profile: Small Coronavirus particle</p>
+      <img class="MVF1" src="image/MVF1img/SmallCV.png" alt="Small coronavirus particle enemy" width="100%">
+  <p>Enemy profile: Firetrolley</p>
+      <img class="MVF1" src="image/MVF1img/Firetrolley.png" alt="Small coronavirus particle enemy" width="100%">
+  <p>Enemy profile: Screamer</p>
+      <img class="MVF1" src="image/MVF1img/Screamer.png" alt="Small coronavirus particle enemy" width="100%">
+  <p>Enemy profile: Sneezer</p>
+      <img class="MVF1" src="image/MVF1img/Sneezer.png" alt="Small coronavirus particle enemy" width="100%">
+  
+  <hr>
+  
+  <h3>User stories and Validation Criteria</h3>
+  <table>
+      <tr>
+        <th>Figure Ref.</th>
+        <th>Condition</th>
+        <th>User story</th>
+        <th>Validation</th>
+        <th>Failure condition</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>Enemy is loaded</td>
+        <td>User walks/loads into the screen</td>
+        <td>Enemy is in their position and performing idle behaviour</td>
+        <td>Enemy is not present and is missing on the screen</td>
+      </tr>	
+
+       <tr>
+        <td>2</td>
+        <td>Enemy aggro</td>
+        <td>User walks towards an enemy</td>
+        <td>Enemy reacts to the player’s presence by engaging with the player by either advancing to the player or attacking the player</td>
+        <td>Enemy does not react to the player and does not perform any actions</td>
+       </tr>
+
+       <tr>
+        <td>3</td>
+        <td>Enemy attack</td>
+        <td>User is in the enemy’s range for attacking</td>
+        <td>Enemies perform their attack pattern</td>
+        <td>Enemy, when aggroed, does not attempt to attack the player</td>
+       </tr>
+
+       <tr>
+        <td>4</td>
+        <td>Enemy damages player</td>
+        <td>User does not come out of the enemy’s range and therefore gets hit by the enemy attack</td>
+        <td>Enemies inflicts damage onto the player, and the correct amount of damage on the player</td>
+        <td>The enemy does not do any damage to the player even when hitting within the player’s hitbox or does not do the correct amount of damage (heart points)</td>
+       </tr>
+
+       <tr>
+        <td>5</td>
+        <td>Enemy takes damage</td>
+        <td>User hits the enemy with their weapon</td>
+        <td>When the enemy is hit by the player, the enemy turns red and loses a hit point</td>
+        <td>The enemy’s hitbox is hit however is not registered as damage and/or does not take damage away from the enemy</td>
+       </tr>
+
+  </table>
+  <br>
+    <table>
+       <tr>
+          <td>Figure</td>
+          <td>Validation</td>
+          <td>Failure condition</td>
+       </tr>
+      
+      <tr>
+          <td>1</td>
+          <td><img src="image/MVF1img/Figure1.png" width="100%"></td>
+          <td><img src="image/MVF1img/Figure1-2.png" width="100%"></td>
+      </tr>
+      
+      <tr>
+          <td>2</td>
+          <td><img src="image/MVF1img/Figure2.png" width="100%"></td>
+          <td><img src="image/MVF1img/Figure2-2.png" width="100%"></td>
+      </tr>
+      
+      <tr>
+          <td>3</td>
+          <td><img src="image/MVF1img/Figure3.png" width="100%"></td>
+          <td><img src="image/MVF1img/Figure3-2.png" width="100%"></td>
+      </tr>
+      
+      <tr>
+          <td>4</td>
+          <td><img src="image/MVF1img/Figure4.png" width="100%"></td>
+          <td><img src="image/MVF1img/Figure4-2.png" width="100%"></td>
+      </tr>
+      
+      <tr>
+          <td>5</td>
+          <td><img src="image/MVF1img/Figure5.png" width="100%"></td>
+          <td><img src="image/MVF1img/Figure5-2.png" width="100%"></td>
+      </tr>
+    </table>
+  <br>
+  
+  </div>
+  <footer>
+    <p>COSC2625 Building IT Systems: Assignment Part 2 | Group: AR-FR-330-somethingsomething</p>
+  </footer>
+  
+
+</body>
+</html>
   <hr> 
 
 <p>hi</p>
